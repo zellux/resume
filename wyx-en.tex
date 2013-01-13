@@ -1,0 +1,231 @@
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+%\moderncvtheme[blue, roman]{casual}
+% optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvtheme[blue]{classic}                % idem
+
+\usepackage[utf8]{inputenc}
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\recomputelengths                             % required when changes are made to page layout lengths
+
+% personal data
+\firstname{Yuanxuan}
+\familyname{Wang}
+\title{Curriculum Vitae}
+\mobile{+86 18621265857}
+\email{zellux@gmail.com}
+%% \quote{``Do what you fear, and the death of fear is certain.''\\-- Anthony Robbins}
+
+%\phone{(312) 413-8265}                      % optional, remove the line if not wanted
+%\fax{312 996 1491}                          % optional, remove the line if not wanted
+%\photo[64pt]{avatar.jpg}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file;
+
+\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+%% \renewcommand*{\sectionfont}{\LARGE\sffamily\monospace\slshape}
+%% \renewcommand*\addressfont{\fontfamily{pzc}\selectfont}
+%% \renewcommand*\sectionfont{\fontfamily{pzc}\fontsize{20}{24}\selectfont}
+
+\begin{document}
+\maketitle
+
+\section{Education}
+\cventry{2010--Present}{MS in System Software, Supervisor: Haibo Chen}{Software School, Fudan University}{expected 2013}{}{}
+\cventry{2006--2010}{BA in Software Engineering}{Software School, Fudan University}{}{}{}
+
+%\section{Master thesis}
+%\cvline{title}{\emph{Title}}
+%\cvline{supervisors}{Supervisors}
+%\cvline{description}{\small Short thesis abstract}
+
+\section{Internship}
+\cventry{2012}{Summer Analyst at Morgan Stanley}{E-Trading Infrastructure Department}{}{}{Designed and implemented a BitTorrent based system to speed up trading data precache}
+\cventry{2011}{Summer internship at EMC Research Shanghai}{}{}{}{Researched on I/O side channel attack in a share-host environment}
+
+\section{Community}
+\cventry{Blog}{\url{blog.yxwang.me}}{My blog (Chinese)}{}{}{}
+\cventry{Stack Overflow}{\url{stackoverflow.com/users/111896/zellux}}{Reputation top 4\%}{}{}{}
+\cventry{GitHub}{\url{github.com/zellux}}{}{}{}{}
+
+\section{Project Experience}
+%% \subsection{Research Projects}
+
+\cventry{2011--present}
+{Tangcha Project}
+{iOS, Ruby on Rails}
+{Startup Project}{}
+{
+Tangcha is a startup project, aimed at providing the best online
+Chinese ebook store for readers. I have been working as a part-time
+developer in Tangcha, and responsible for designing and implementing
+most functions of the back-end server, including purchasing interfaces
+for mobile phones and tablets, user authorization, transaction
+validation, third-party storage integration, synchronization service,
+dashboard for publishers and administrators, server configuration, and
+etc.
+}
+
+\vspace*{0.2\baselineskip}
+\cventry{2011--2012}
+{ReDroid}
+{Android}
+{Research Project}{}
+{Working with Jinchen Han, Chen Tan, Prof. Haibo Chen and Prof. Binyu Zang. \\
+ReDroid is an event-centric record and replay framework that targets
+smartphone platforms. We ensure its replayability as well as low
+recording overhead by optimization techniques including fine-grained
+UI-event based recording, coarse-grained data based recording,
+intertwined replay, and system call interception to handle some low
+level undeterminism. I was the major contributor of this project and the paper has been submitted to ASPLOS '13.
+}
+
+\vspace*{0.2\baselineskip}
+\cventry{2009--2011}
+{Cerberus}
+{Xen, Linux Kernel}
+{Research Project}{}
+{Working with Xiang Song, Rong Chen, Prof. Haibo Chen and Prof. Binyu Zang. \\
+Cerberus aims at improving application scalability on many-core in a
+backward-compatibility way. To mitigate contention on shared data
+structures within OS kernels, Cerberus clusters multiple commodity
+operating systems atop a VMM. It achieves up to 3.49x Apache httpd
+throughput compared to vanilla Linux on a 16-core machine.
+}
+
+%% \cventry{2011--present}
+%% {AlgoTrading}
+%% {Go, Java}
+%% {}{}
+%% {An analyzing tool for offline trading strategy emulating. Data are parsed from TongDaXin stock trading software, I emulated and evaluated several trading strategies based on this project.}
+
+%% \cventry{2008}{GPGPU Optimization}{C++, CTM IL}{}{}{Research on GPGPU program optimization and platform features}
+
+%% \subsection{Course Projects}
+%% \cventry{2008}{Compiler for Tiger Language}{C, Flex, Bison}{}{}{Project for the course Compilers}
+
+%% \subsection{Other Projects}
+%% \vspace*{0.2\baselineskip}
+\cventry{2010}
+{ForceField}
+{Python, ANTLR}
+{Independent Project}{}
+{In collaboration with Menghua Xiao. \\
+We designed a scripting language named ForceField, and implemented an
+interpreter for it using Python and ANTLR. To simplify debugging
+ForceField scripts, we also developed an online debugging service,
+with features like single stepping and variable watching available
+through web interface.
+}
+
+\vspace*{0.2\baselineskip}
+\cventry{2010}
+{AppFlight for Android}
+{Android}
+{Startup Project}{}
+{
+A user customizable application framework. Users define contents and
+layout style in a web CMS, we then render those contents on mobile
+applications.
+}
+
+%% \cventry{2010}
+%% {Computer System Engineering Teaching Assistant}{}{}{}
+%% {}
+
+\vspace*{0.2\baselineskip}
+\cventry{2009}
+{Nexus}
+{C, Assembly}
+{Independent Project}{}
+{
+An exokernel-like operating system, based on MIT Course 6.828.
+}
+
+%% \cventry{2009}
+%% {Operating System Teaching Assistant}{}{}{}{}
+
+\vspace*{0.2\baselineskip}
+\cventry{2009}
+{Reading Progress Tracker}
+{Python, Django, Google App Engine}
+{Independent Project}{}
+{
+A web application to help user track everyday reading progress. The reading list is synced with douban.com.
+}
+
+% \cventry{2008}{Koprulu}{C, Assembly}{}{}{A simple multi-tasking preemptive OS kernel, based on CMU 15-410 lab.}
+%% \cventry{2008}{Distributed IRC Server}{C}{}{}{Project for the course Networking}
+
+\vspace*{0.2\baselineskip}
+\cventry{2008}
+{Koprulu}
+{C, Assembly}
+{Course Project}{}
+{
+A simple multi-tasking preemptive OS kernel, based on CMU 15-410 lab.
+}
+
+\vspace*{0.2\baselineskip}
+\cventry{2008}
+{GPA Calculator for Fudan Students}
+{Python, wxWidgets}
+{Independent Project}{}
+{
+A desktop application which fetches and parses course grades from web
+pages, and calculates GPA based on parsing result. It had been
+downloaded over 6000 times in one year.
+}
+
+% \cventry{2007}{Collaborative Multi-client Drawing System}{Java, RMI}{}{}{Project for Object-Oriented Programming course.}
+%% \cventry{2008}{Succour Administration System for Changzheng Community}{Java, JSP}{}{}{A simple web-based succour management system}
+%% \cventry{2007}{Train Ticket Booking System for Fudan University}{Java, JSP}{}{}{My first out-sourcing project}
+
+\section{Publications}
+
+\cventry{2012}
+{\textbf{Yuanxuan Wang}\textnormal{, Jincheng Han, Haibo Chen, Binyu Zang}}
+{ReDroid: Fast Malware Recovery on Smartphones with Intertwined Replay}{In IPADS Technique Report}
+{}{}{}
+
+\cventry{2011}
+{\textnormal{Xiang Song, Haibo Chen, Rong Chen,} \textbf{Yuanxuan Wang}\textnormal{, Binyu Zang}}
+{A Case for Scaling Applications to Many-core Platforms with OS Clustering}
+{In 2011 ACM SIGOPS European Conference on Computer Systems (Eurosys'2011)}
+{}{}{}
+
+\section{Awards}
+\cventry{2012}{Most Creative Award of Morgan Stanley Summer Intern Team Project}{}{}{}{}
+\cventry{2010}{First Prize in SAP Dashboard Competition 2010}{}{}{}{}
+\cventry{2010}{First Prize in Cloud Computing in Shanda Campus Master Innovation Contest}{}{}{}{}
+\cventry{2010}{First Grade Scholarship for Graduates}{}{}{}{}
+% \cventry{2009}{Third Grade People's Scholarship}{}{}{}{}
+%% \cventry{2007, 2008}{Second Grade Scholarship for Undergraduates}{}{}{}{}
+\cventry{2007}{First Place in Zhangjiang Cup, Dota Allstars}{}{}{}{}
+\cventry{2006, 2008}{Second Place in Fudan E-sports Game, Starcraft}{}{}{}{}
+% \cventry{2006}{Third Prize in Fudan Technology Contest}{}{}{}{}
+\cventry{2005, 2004}{First Prize in National Olympiad in Informatics in Provinces}{}{}{}{}
+
+\section{Skills}
+\cventry{Languages}{Ruby = C = Java > Python > C++}{}{}{}{}
+\cventry{Kernels}{Linux, Xen, Android}{}{}{}{}
+%% \cventry{Application Dev}{Ruby on Rails, iOS development}{}{}{}{}
+\cventry{English}{CET-6 593}{fluent in spoken and written English, also a TED translator}{}{}{}
+\cventry{Games}{Starcraft 2 (Master League)}{}{}{}{}
+
+% \closesection{}                   % needed to renewcommands
+% \renewcommand{\listitemsymbol}{-} % change the symbol for lists
+
+%\section{Extra 1}
+%\cvlistitem{Item 1}
+%\cvlistitem{Item 2}
+%\cvlistitem[+]{Item 3}            % optional other symbol
+
+%\section{Extra 2}
+%\cvlistdoubleitem[\Neutral]{Item 1}{Item 4}
+%\cvlistdoubleitem[\Neutral]{Item 2}{Item 5}
+%cvlistdoubleitem[\Neutral]{Item 3}{}
+
+\end{document}
