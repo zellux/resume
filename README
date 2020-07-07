@@ -2,3 +2,7 @@ Run `make` to build your own resume under Mac OS X.
 
 If you are using Windows / Linux, please change the fonts used in the latex files.
 
+
+Packages you would need under Ubuntu:
+
+`sudo apt install texlive-latex-recommended texlive-lang-cjk`
