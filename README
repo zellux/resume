@@ -1,8 +1,19 @@
-Run `make` to build your own resume under Mac OS X.
+## Steps
 
-If you are using Windows / Linux, please change the fonts used in the latex files.
+1. Update moderncv submodule.
 
+```
+$ git submodule init && git submodule update && git submodule status
+```
 
-Packages you would need under Ubuntu:
+2. Install latex and CJK font package.
 
-`sudo apt install texlive-latex-recommended texlive-lang-cjk`
+Mac: [MacTeX](https://tug.org/mactex/mactex-download.html) should cover all dependencies.
+Ubuntu: Install through `sudo apt install texlive-latex-recommended texlive-lang-cjk`
+
+3. Run `make` to build resume pdfs.
+
+## Troubleshooting
+
+Font missing error: install corresponding font, or change the fonts used in the latex files.
+
